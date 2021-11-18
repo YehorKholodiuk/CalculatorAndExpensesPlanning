@@ -2,37 +2,106 @@
   text-align: center;
 }
 
+body {
+  background: rgb(255, 255, 255);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrap {
+  border: 1px solid mediumseagreen;
+  margin: 1%;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(20px, auto);
+  background: rgb(240, 240, 240);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.productCard {
+  margin: 2%;
+  border: 1px solid ghostwhite;
+  padding: 10px;
+  background: ghostwhite;
+}
+
+.productImage {
+  width: 70%
+}
+
+.priceBeforeSale {
+  text-decoration: line-through;
+}
+
+.calcWrap {
+  margin: 1% 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(30%, auto);
+  border-radius: 15px;
+}
+
+#calcButton {
+  font-size: 200%;
+  border-radius: 55px;
+  border: 1px solid black;
+  margin: 7%;
+}
+
+#calcButton0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 200%;
+  border-radius: 55px;
+  border: 1px solid black;
+  margin: 4%;
+}
+
+.calcResultArea {
+  font-size: 300%;
+  border-radius: 15px;
+  height: 70px;
+  margin: 1% 5%;
+  padding: 0.1% 5%;
+  text-align: right;
+}
+
+.additional {
+  background: rgb(240, 240, 240);
+}
+
+.action {
+  background: rgb(212, 175, 55);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: rgb(250, 250, 250);
+  color: rgb(212, 175, 55);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background: rgb(250, 250, 250);
+  color: rgb(212, 175, 55);
+}
+
+.equally  {
+  background: rgb(212, 175, 55);
+  color: white;
+}
+
+.digit {
+  background: rgb(100, 100, 100);
+  color: white;
+}
+
+.income {
+  background: rgb(248, 248, 248);
+}
+
+.expenses {
+  background: rgb(252, 252, 252);
 }
